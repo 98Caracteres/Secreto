@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento Secreto - Informações Pessoais</title>
+    <link rel="stylesheet" href="menu_style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="pagina.principal.html">Página Principal</a></li>
+            <li><a href="plantas.alucinogenas.html">Plantas Alucinógenas</a></li>
+            <li><a href="informacoes.pessoais.html">Informações Pessoais</a></li>
+            <li><a href="armas.html">Armas</a></li>
+            <li><a href="venenos.html">Venenos</a></li>
+            <li><a href="livros.html">Livros</a></li>
+            <li><a href="criptografia.html">Criptografia</a></li>
+            <li><a href="formas.de.extracao.html">Formas de Extração</a></li>
+            <li><a href="materiais.necessarios.html">Materiais Necessários</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="header">
+            <h1>Documento Secreto</h1>
+        </div>
+
+        <div align="center">
+            <img src="imagens_pp/logo.png" alt="Logo da Irmandade" width="63" height="52" align="center">
+        </div>
+
+        <!-- Barra de Pesquisa -->
+        <div class="search-bar" style="text-align: center; padding: 20px;">
+            <form onsubmit="return searchMember()">
+                <label for="registro">Número de Registro:</label>
+                <input type="text" id="registro" name="registro" placeholder="Digite o número de registro" required>
+                <button type="submit">Pesquisar</button>
+            </form>
+        </div>
+
+        <div class="section">
+            <h2>Informações Pessoais</h2>
+
+            <!-- Aqui não exibe mais as informações dos membros, apenas a pesquisa -->
+            <p>Digite o número de registro do membro acima para acessar as informações.</p>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 IRMANDADE | <a href="#">Política de Privacidade</a></p>
+    </div>
+
+    <script>
+    // Função para redirecionar com base no número de registro
+    function searchMember() {
+        var memberID = document.getElementById("registro").value; // Pega o valor digitado
+        if (memberID) {
+            // Adiciona o ".html" no final do número de registro
+            window.location.href = "pagina-membro-" + memberID + ".html"; // Vai para a página do membro com .html
+        }
+        return false; // Previne o envio do formulário
+    }
+</script>
+
+
+</body>
+</html>

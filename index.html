@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="style2.css">
+    <script>
+        function verificarSenha() {
+            var senha = document.getElementById("senha").value;
+            var senhaCorreta = "0304"; // Defina a senha desejada
+
+            if (senha === senhaCorreta) {
+                window.location.href = "pagina.principal.html"; // Redireciona para a página principal
+            } else {
+                alert("Senha incorreta! Tente novamente.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="logo-container">
+        <div align="center">
+            <img src="imagens_pp/logo.png" alt="Logo da Irmandade" width="63" height="52">
+        </div>
+    </div>
+    <div class="container">
+        <h2>Digite a senha para entrar</h2>
+        <div class="form-group">
+            <input type="password" id="senha" placeholder="Senha" required>
+            <!-- Modifiquei para que o botão chame a função verificarSenha() -->
+            <button type="button" onclick="verificarSenha()">Entrar</button>
+        </div>
+    </div>
+</body>
+</html>

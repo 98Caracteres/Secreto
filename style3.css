@@ -1,0 +1,176 @@
+body {
+    background-color: #121212;
+    color: #f1f1f1;
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+    border: 2px solid #8b0000; /* Cor única para Miguel */
+    border-radius: 10px;
+    background-color: #2c2c2c;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #8b0000; /* Cor única para Miguel */
+}
+
+/* Estilos para o Menu */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #8b0000; /* Cor única para Miguel */
+    color: #fff;
+}
+
+.menu a:active {
+    background-color: #ff4500; /* Cor mais forte */
+}
+
+/* Estilo Responsivo para o Menu (pequenos dispositivos) */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+}
+
+.section {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px dashed #ffffff;
+    border-radius: 10px;
+    background-color: #333333;
+}
+
+.section h2 {
+    font-size: 24px;
+    color: #8b0000; /* Cor única para Miguel */
+}
+
+.section img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #008080;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+}
+
+.section p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.note {
+    padding: 15px;
+    background-color: #111;
+    font-size: 18px;
+    font-weight: bold;
+    border-left: 5px solid #ff0000;
+    margin-top: 20px;
+}
+
+.footer {
+    margin-top: 40px;
+    text-align: center;
+    color: #999999;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #00b3b3;
+}
+
+/* Estilos para a Barra de Pesquisa */
+.search-bar {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #333333;
+    border-radius: 10px;
+}
+
+.search-bar form {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    border: 2px solid #8b0000; /* Cor única para Miguel */
+    border-radius: 5px;
+    background-color: #2c2c2c;
+    color: #fff;
+    width: 200px;
+}
+
+.search-bar input[type="text"]:focus {
+    border-color: #ff4500; /* Cor mais forte */
+    outline: none;
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    background-color: #8b0000; /* Cor única para Miguel */
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: #ff4500; /* Cor mais forte */
+}
+
+.search-bar button:active {
+    background-color: #ff6347; /* Tom de vermelho mais vibrante */
+}
